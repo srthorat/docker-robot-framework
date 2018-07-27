@@ -28,7 +28,7 @@ docker build -t=srt2011/docker-robot-framework .
 ## Run docker
 
 ```
-docker run -v $(pwd)/tests:/robots  -v ${pwd}/output:/output -e ROBOT_TESTS=/robots/ -e BROWSER=firefox srthorat/docker-robot-framework
+docker run -v $(pwd)/tests:/robots  -v ${pwd}/output:/output -e ROBOT_TESTS=/robots/ -e BROWSER=firefox srt2011/docker-robot-framework
 ```
 
 Define test case directory in param -v and change path from $(pwd)/tests to your defined path in your local computer.

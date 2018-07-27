@@ -18,7 +18,7 @@ export DISPLAY=${DISPLAY}
 rm -rf /output/*
 
 echo -e "Executing robot tests"
-pybot  --outputdir /output ${ROBOT_TESTS}
+pybot --variable BROWSER:${BROWSER} --outputdir /output ${ROBOT_TESTS}
 
 # Stop Xvfb
 echo -e "Stopping Xvfb"

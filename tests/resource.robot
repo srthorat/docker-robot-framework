@@ -8,7 +8,7 @@ Library           Selenium2Library
 
 *** Variables ***
 ${SERVER}         www.google.com
-${BROWSER}        firefox
+${BROWSER}        %{BROWSER}
 ${LOGIN URL}      https://${SERVER}/
 
 *** Keywords ***

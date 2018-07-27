@@ -14,18 +14,18 @@ docker pull srt2011/docker-robot-framework
 ```
 Or
  
-##Clone this repository
+## Clone this repository
 ```
 git clone https://github.com/srthorat/docker-robot-framework.git
 ```
 
-##Build from source
+## Build from source
 
 ```
 docker build -t=srt2011/docker-robot-framework .
 ```
 
-##Run docker
+## Run docker
 
 ```
 docker run -v $(pwd)/tests:/robots  -v ${pwd}/output:/output -e ROBOT_TESTS=/robots/ -e BROWSER=firefox srthorat/docker-robot-framework
